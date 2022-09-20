@@ -1,0 +1,27 @@
+STORE 'nomor' AS NUMBER WITH ANY VALUE
+STORE 'nominalpil' WITH '5000'
+STORE 'nominal1' WITH '5000'
+STORE 'nominal2' WITH '10000'
+STORE 'nominal3' WITH '20000'
+STORE 'nominal4' WITH '50000'
+STORE 'nominal5' WITH '100000'
+
+IF FIRST 4 DIGITS OF 'nomor' = 0876 THEN
+    nomor = providerA
+ELSE
+    nomor = notproviderA
+
+INPUT nomor
+IF nomor = providerA THEN
+    DISPLAY nominal1 TO nominal4
+    CHOOSE nominal1
+    IF nominal1 = nominalpil THEN
+        CHOOSE buy button
+        CHOOSE payment method
+        CHOOSE pay
+    ELSE 
+        CHOOSE back button
+    END IF
+ELSE
+    DISPLAY 'Bukan nomor provider A'
+END IF
