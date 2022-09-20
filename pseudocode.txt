@@ -1,5 +1,5 @@
 STORE 'nomor' AS NUMBER WITH ANY VALUE
-STORE 'nominalpil' WITH '5000'
+STORE 'nominalpilihan' WITH '5000'
 STORE 'nominal1' WITH '5000'
 STORE 'nominal2' WITH '10000'
 STORE 'nominal3' WITH '20000'
@@ -15,7 +15,7 @@ INPUT nomor
 IF nomor = providerA THEN
     DISPLAY nominal1 TO nominal4
     CHOOSE nominal1
-    IF nominal1 = nominalpil THEN
+    IF nominal1 = nominalpilihan THEN
         CHOOSE buy button
         CHOOSE payment method
         CHOOSE pay
