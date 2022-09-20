@@ -13,7 +13,7 @@ ELSE
 
 INPUT nomor
 IF nomor = providerA THEN
-    DISPLAY nominal1 TO nominal4
+    DISPLAY nominal1 TO nominal5
     CHOOSE nominal1
     IF nominal1 = nominalpilihan THEN
         CHOOSE buy button
